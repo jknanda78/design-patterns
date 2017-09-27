@@ -14,7 +14,14 @@ module.exports = {
       "statements": 0
     }
   },
+  moduleNameMapper: {
+    "^.+\\.(css|less|scss)$": "babel-jest"
+  },
   testMatch: [ '**/test/js/**/*-test.js?(x)' ],
+  "testPathIgnorePatterns": [
+    "/node_modules/",
+    "/build/"
+  ],
   transformIgnorePatterns: [
     "/node_modules/core-js/",
     "/node_modules/babel-runtime/",

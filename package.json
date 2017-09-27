@@ -28,12 +28,15 @@
   "dependencies": {
     "esdoc": "^1.0.3",
     "esdoc-standard-plugin": "^1.0.0",
+    "node-sass": "^4.5.3",
     "preact": "^8.2.5",
     "preact-compat": "^3.17.0",
-    "preact-router": "^2.5.7"
+    "preact-router": "^2.5.7",
+    "postcss": "^6.0.0",
+    "sass-loader": "^6.0.6"
   },
   "devDependencies": {
-    "@jsfoobar/input-field": "0.0.1",
+    "@jsfoobar/input-field": "0.0.5",
     "babel-preset-es2015": "^6.1.2",
     "babel-preset-react": "^6.1.2",
     "babel-preset-stage-2": "^6.5.0",
