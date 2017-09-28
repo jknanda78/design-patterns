@@ -25,15 +25,21 @@ const propsForVault = {
 };
 
 const App = () => (
-	<form>
-		<AtomDInputField {...propsForAtom}>
-			<InputField {...propsForAtom} />
-		</AtomDInputField>
+	<div class="example">
+		<form>
+			<p>This input field component is built with Atom Design</p>
+			<AtomDInputField {...propsForAtom}>
+				<InputField {...propsForAtom} />
+			</AtomDInputField>
+		</form>
 
-		<VaultDInputField {...propsForVault}>
-			<InputField {...propsForVault} />
-		</VaultDInputField>
-	</form>
+		<form>
+			<p>This input field component is built with Vault Design</p>
+			<VaultDInputField {...propsForVault}>
+				<InputField {...propsForVault} />
+			</VaultDInputField>
+		</form>
+	</div>
 );
 
 export default App;

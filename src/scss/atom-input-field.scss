@@ -10,18 +10,25 @@ $width: 350px;
   box-sizing: border-box;
 }
 
-.atom-input-field {
-  padding: 2px 0;
-
-  > div:first-of-type {
-    border: 5px solid #CCCCCC;
-    padding: 10px;
+.example {
+  form {
+    margin: 20px 0;
+    padding: 0;
+    border: 1px solid #c4c4c4;
   }
 
   p {
     padding: 2px;
     margin: 0;
     font-weight: bold;
+  }
+}
+
+.atom-input-field {
+  padding: 2px 0;
+
+  > div:first-of-type {
+    padding: 10px;
   }
 
   .group {
