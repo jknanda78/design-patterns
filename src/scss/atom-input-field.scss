@@ -1,6 +1,6 @@
 $bg-color: #424242;
-$hl-color: #2196F3;
-$muted-color: mix(white, $bg-color, 70%);
+$hl-color: #0c4da9;
+$muted-color: mix(white, $bg-color, 20%);
 $trans-time: 300ms;
 $width: 350px;
 
@@ -44,7 +44,7 @@ $width: 350px;
       width: $width;
       border: none;
       border-radius: 0;
-      border-bottom: 1px solid $muted-color;
+      border-bottom: 1px solid #0c4da9;
       &:focus {
         outline: none;
       }
@@ -69,8 +69,22 @@ $width: 350px;
       letter-spacing: 0.3em;
     }
 
+    input[type="submit"] {
+      margin: 5px 2px;
+      color: #ffffff;
+      background: $hl-color;
+      border-bottom: none;
+    }
+
+    input[type="button"] {
+      margin: 5px 2px;
+      color: #0c4da9;
+      background-color: transparent;
+      border: 1px solid $hl-color;
+    }
+
     label {
-      color: $muted-color;
+      color: $hl-color;
       font-size: 16px;
       font-weight: normal;
       text-transform: uppercase;

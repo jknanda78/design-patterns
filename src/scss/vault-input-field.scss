@@ -1,6 +1,6 @@
 $bg-color: #424242;
-$label-color: #7f7d7d;
-$muted-color: mix(white, $bg-color, 30%);
+$label-color: #0c4da9;
+$muted-color: mix(white, $bg-color, 10%);
 $trans-time: 300ms;
 $width: 350px;
 
@@ -42,7 +42,7 @@ $width: 350px;
       width: $width;
       border: none;
       border-radius: 0;
-      border-bottom: 1px solid $muted-color;
+      border-bottom: 1px solid #0c4da9;
       &:focus {
         outline: none;
       }
@@ -64,8 +64,22 @@ $width: 350px;
       }
     }
 
+    input[type="submit"] {
+      margin: 5px 2px;
+      color: $label-color;
+      background: #ffdf33;
+      border-bottom: none;
+    }
+
+    input[type="button"] {
+      margin: 4px 2px;
+      color: $label-color;
+      background-color: transparent;
+      border: 1px solid #0c4da9;
+    }
+
     label {
-      color: $muted-color;
+      color: $label-color;
       font-size: 16px;
       font-weight: normal;
       text-transform: uppercase;
@@ -86,7 +100,7 @@ $width: 350px;
         width: 0;
         bottom: 0px;
         position: absolute;
-        background: $label-color;
+        background: #0c4da9;
         transition: $trans-time ease all;
         left: 0%;
       }

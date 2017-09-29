@@ -31,12 +31,22 @@ const App = () => (
 			<AtomDInputField {...propsForAtom}>
 				<InputField {...propsForAtom} />
 			</AtomDInputField>
+
+			<AtomDInputField>
+				<InputField name="submit" type="submit" value="Submit" />
+				<InputField name="cancel" type="button" value="Cancel" />
+			</AtomDInputField>
 		</form>
 
 		<form>
 			<p>This input field component is built with Vault Design</p>
 			<VaultDInputField {...propsForVault}>
 				<InputField {...propsForVault} />
+			</VaultDInputField>
+
+			<VaultDInputField>
+				<InputField name="submit" type="submit" value="Submit" />
+				<InputField name="cancel" type="button" value="Cancel" />
 			</VaultDInputField>
 		</form>
 	</div>
