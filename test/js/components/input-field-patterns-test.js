@@ -1,6 +1,6 @@
-import { AtomDInputField, VaultDInputField } from "../../../src/js/components/input-field-patterns";
+import { AtomDesignInputField, VaultDesignInputField } from "../../../src/js/components/input-field-patterns";
 
 test('should have component defined', () => {
-  expect(AtomDInputField).toBeDefined();
-  expect(VaultDInputField).toBeDefined();
+  expect(AtomDesignInputField).toBeDefined();
+  expect(VaultDesignInputField).toBeDefined();
 });

@@ -21,13 +21,13 @@ export const renderFormField = props => {
 	);
 };
 
-export const AtomDInputField = props => (
+export const AtomDesignInputField = props => (
 	<div class="atom-input-field">
 		{ renderFormField(props) }
 	</div>
 );
 
-export const VaultDInputField = props => (
+export const VaultDesignInputField = props => (
 	<div class="vault-input-field">
 		{ renderFormField(props) }
 	</div>
