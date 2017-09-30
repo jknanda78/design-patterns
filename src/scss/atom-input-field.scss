@@ -2,7 +2,8 @@ $bg-color: #424242;
 $hl-color: #0c4da9;
 $muted-color: mix(white, $bg-color, 20%);
 $trans-time: 300ms;
-$width: 350px;
+$width: 100%;
+$font-family: Verdana, Geneva, sans-serif;
 
 *,
 :before,
@@ -27,11 +28,11 @@ $width: 350px;
 .atom-input-field {
 
   > div:first-of-type {
-    padding: 10px;
+    padding: 5px;
   }
 
   .group {
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: $font-family;
     position: relative;
     margin: 10px 0;
 
@@ -69,20 +70,6 @@ $width: 350px;
       letter-spacing: 0.3em;
     }
 
-    input[type="submit"] {
-      margin: 5px 2px;
-      color: #ffffff;
-      background: $hl-color;
-      border-bottom: none;
-    }
-
-    input[type="button"] {
-      margin: 5px 2px;
-      color: #0c4da9;
-      background-color: transparent;
-      border: 1px solid $hl-color;
-    }
-
     label {
       color: $hl-color;
       font-size: 16px;
@@ -109,6 +96,38 @@ $width: 350px;
         transition: $trans-time ease all;
         left: 0%;
       }
+    }
+  }
+
+  .btn-group {
+    input[type="submit"] {
+      color: $muted-color;
+      font-size: 18px;
+      padding: 10px 10px 10px 5px;
+      display: block;
+      width: $width;
+      border: none;
+      border-radius: 0;
+      border-bottom: 1px solid #0c4da9;
+      margin: 5px 2px;
+      color: #ffffff;
+      background: $hl-color;
+      border-bottom: none;
+    }
+
+    input[type="button"] {
+      color: $muted-color;
+      font-size: 18px;
+      padding: 10px 10px 10px 5px;
+      display: block;
+      width: $width;
+      border: none;
+      border-radius: 0;
+      border-bottom: 1px solid #0c4da9;
+      margin: 5px 2px;
+      color: #0c4da9;
+      background-color: transparent;
+      border: 1px solid $hl-color;
     }
   }
 }
