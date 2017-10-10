@@ -25,7 +25,7 @@ const propsForVault = {
 const App = () => (
 	<div class="example">
 		<form>
-			<p>This input field component is built with Atom Design</p>
+			<h2>This input field component is built with Atom Design</h2>
 			<AtomDesignInputField label="Username">
 				<InputField {...propsForAtom} />
 			</AtomDesignInputField>
@@ -37,7 +37,7 @@ const App = () => (
 		</form>
 
 		<form>
-			<p>This input field component is built with Vault Design</p>
+			<h2>This input field component is built with Vault Design</h2>
 			<VaultDesignInputField label="Password">
 				<InputField {...propsForVault} />
 			</VaultDesignInputField>
