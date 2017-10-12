@@ -3,20 +3,24 @@ import '../../scss/atom-input-field.scss';
 import '../../scss/vault-input-field.scss';
 
 export const renderFormField = props => {
-	if (props.label) {
+	const { label, error, name, children } = props;
+	const errMsg = (error && error[name]) ? error[name] : null;
+
+	if (label) {
 		return (
 			<div class="group">
-				{props.children}
+				{children}
+				<span class={(errMsg)?"error":""}>{errMsg}</span>
 				<span class="highlight" />
 				<span class="bar" />
-				<label for={props.name}>{props.label}</label>
+				<label for={name}>{label}</label>
 			</div>
 		);
 	}
 
 	return (
 		<div class="btn-group">
-			{props.children}
+			{children}
 		</div>
 	);
 };

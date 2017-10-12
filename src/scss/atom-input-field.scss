@@ -36,6 +36,18 @@ $font-family: Verdana, Geneva, sans-serif;
     position: relative;
     margin: 10px 0;
 
+    .error {
+      position: absolute;
+      top: 0;
+      left: 8px;
+      font-size: 10px;
+      color: red;
+      pointer-events: none;
+      ~ label {
+        display: none;
+      }
+    }
+
     input {
       background: none;
       color: $muted-color;
@@ -49,9 +61,15 @@ $font-family: Verdana, Geneva, sans-serif;
       &:focus {
         outline: none;
       }
+      &:focus ~ .error {
+        display: block;
+      }
+      &:focus ~ .error ~ label {
+        display: none;
+      }
       &:focus ~ label,
       &:valid ~ label {
-        top: 5px;
+        top: 0;
         font-size: 12px;
         color: $hl-color;
       }
