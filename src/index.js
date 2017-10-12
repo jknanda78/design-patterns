@@ -24,7 +24,7 @@ const renderAtomDesignInputField = () => {
 			<InputField {...props} />
 		</AtomDesignInputField>
 	);
-}
+};
 
 const renderVaultDesignInputField = () => {
 	const propsForInputField = {
@@ -48,7 +48,7 @@ const renderVaultDesignInputField = () => {
 			<InputField {...props} />
 		</VaultDesignInputField>
 	);
-}
+};
 
 const App = () => (
 	<div class="example">

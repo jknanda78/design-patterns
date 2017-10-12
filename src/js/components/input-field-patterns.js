@@ -10,7 +10,7 @@ export const renderFormField = props => {
 		return (
 			<div class="group">
 				{children}
-				<span class={(errMsg)?"error":""}>{errMsg}</span>
+				<span class={(errMsg)?'error':''}>{errMsg}</span>
 				<span class="highlight" />
 				<span class="bar" />
 				<label for={name}>{label}</label>
