@@ -1,6 +1,6 @@
 import { h } from 'preact';
-import '../../scss/atom-input-field.scss';
-import '../../scss/vault-input-field.scss';
+import '../../scss/donut-input-field.scss';
+import '../../scss/kitkat-input-field.scss';
 
 export const renderFormField = props => {
 	const { label, error, name, children } = props;
@@ -26,13 +26,13 @@ export const renderFormField = props => {
 };
 
 export const Pattern1 = props => (
-	<div class="atom-input-field">
+	<div class="donut-input-field">
 		{ renderFormField(props) }
 	</div>
 );
 
 export const Pattern2 = props => (
-	<div class="vault-input-field">
+	<div class="kitkat-input-field">
 		{ renderFormField(props) }
 	</div>
 );
