@@ -1,3 +1,3 @@
-import { AtomDesignInputField, VaultDesignInputField } from "./src/js/components/input-field-patterns";
+import { Pattern1, Pattern2 } from "./src/js/components/input-field-patterns";
 
-export { AtomDesignInputField, VaultDesignInputField };
+export { Pattern1, Pattern2 };

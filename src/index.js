@@ -1,8 +1,8 @@
 import { h } from 'preact';
-import { AtomDesignInputField, VaultDesignInputField } from './js/components/input-field-patterns';
+import { Pattern1, Pattern2 } from './js/components/input-field-patterns';
 import InputField from '@jsfoobar/input-field';
 
-const renderAtomDesignInputField = () => {
+const renderPattern1DesignInputField = () => {
 	const propsForInputField = {
 		type: 'text',
 		name: 'username',
@@ -20,13 +20,13 @@ const renderAtomDesignInputField = () => {
 	const { label, error, ...props } = propsForInputField;
 
 	return (
-		<AtomDesignInputField label={label} error={error} name={props.name}>
+		<Pattern1 label={label} error={error} name={props.name}>
 			<InputField {...props} />
-		</AtomDesignInputField>
+		</Pattern1>
 	);
 };
 
-const renderVaultDesignInputField = () => {
+const renderPattern2DesignInputField = () => {
 	const propsForInputField = {
 		type: 'password',
 		name: 'password',
@@ -44,30 +44,30 @@ const renderVaultDesignInputField = () => {
 	const { label, error, ...props } = propsForInputField;
 
 	return (
-		<VaultDesignInputField label={label} error={error} name={props.name}>
+		<Pattern2 label={label} error={error} name={props.name}>
 			<InputField {...props} />
-		</VaultDesignInputField>
+		</Pattern2>
 	);
 };
 
 const App = () => (
 	<div class="example">
 		<form>
-			<h2>This input field component is built with Atom Design</h2>
-			{renderAtomDesignInputField()}
-			<AtomDesignInputField>
+			<h2>This input field component is built with Pattern1 Design</h2>
+			{renderPattern1DesignInputField()}
+			<Pattern1>
 				<InputField name="submit" type="submit" value="Submit" />
 				<InputField name="cancel" type="button" value="Cancel" />
-			</AtomDesignInputField>
+			</Pattern1>
 		</form>
 
 		<form>
-			<h2>This input field component is built with Vault Design</h2>
-			{renderVaultDesignInputField()}
-			<VaultDesignInputField>
+			<h2>This input field component is built with Pattern2 Design</h2>
+			{renderPattern2DesignInputField()}
+			<Pattern2>
 				<InputField name="submit" type="submit" value="Submit" />
 				<InputField name="cancel" type="button" value="Cancel" />
-			</VaultDesignInputField>
+			</Pattern2>
 		</form>
 	</div>
 );
