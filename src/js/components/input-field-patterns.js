@@ -25,13 +25,13 @@ export const renderFormField = props => {
 	);
 };
 
-export const AtomDesignInputField = props => (
+export const Pattern1 = props => (
 	<div class="atom-input-field">
 		{ renderFormField(props) }
 	</div>
 );
 
-export const VaultDesignInputField = props => (
+export const Pattern2 = props => (
 	<div class="vault-input-field">
 		{ renderFormField(props) }
 	</div>
